@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/Group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="장애인 화장실"
+            />
+
+            <RadioButton
+                android:id="@+id/RadioPark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="장애인 주차장" />
+
+            <RadioButton
+                android:id="@+id/RadioBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저상버스 노선" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GroupBUS"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioB0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B0" />
+
+            <RadioButton
+                android:id="@+id/RadioB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B2" />
+
+            <RadioButton
+                android:id="@+id/RadioB5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B5" />
+
+            <RadioButton
+                android:id="@+id/Radio991"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="991" />
+
+            <RadioButton
+                android:id="@+id/Radio601"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="601" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 네이버 지도 -->
+        <com.naver.maps.map.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.naver.maps.map.MapView>
+    </LinearLayout>
+
+</LinearLayout>
